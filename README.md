@@ -1,5 +1,5 @@
 # arvore-avl
-Este código é referente a árvore AVL, sua estrutura e algumas explicações importante!
+Este código é referente a árvore AVL, sua estrutura e algumas explicações importantes!
 
 A altura é a quantidade de arestas(níveis) da raíz até suas folhas, 
 e o fator de balanço é a altura da subárvore esquerda - a altura da subárvore direita.
