@@ -6,7 +6,7 @@ e o fator de balanço é a altura da subárvore esquerda - a altura da subárvor
 
 Desta forma: 
 
-Imagine está árvore 
+Imagine esta árvore 
 
     60 (nível/altura 4)
       \
