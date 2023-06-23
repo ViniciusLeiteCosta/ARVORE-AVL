@@ -16,7 +16,7 @@ Imagine esta árvore
                 \
                   63 (nível/altura 1)
 
-Está árvore está totalmente desbalanceada.
+Esta árvore está totalmente desbalanceada.
 Uma árvore é dita balanceada quando ela respeita a seguinte regra:
 
 Quando o fator de balanço é:
