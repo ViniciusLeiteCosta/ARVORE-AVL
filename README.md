@@ -70,9 +70,10 @@ Sabendo disto, fazemos o seguinte:
 
 pegamos 61 e fazemos a rotação, onde 61 se torna a raíz e 60 seu filho esquerdo:
 
-  61
- /  \
-60   62 
+    61
+   /  \
+  60   62 
+
 
 fazemos novamente o cálculo de fator de balanço:
 
