@@ -81,3 +81,7 @@ fazemos novamente o cálculo de fator de balanço:
 61 FB = 0
 62 FB = 0
                   
+Então em cada passo devemos sempre fazer o cálculo de fator de balanço!
+
+Inserir(x)
+FB;
