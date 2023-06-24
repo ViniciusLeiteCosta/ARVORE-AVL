@@ -84,4 +84,5 @@ fazemos novamente o cálculo de fator de balanço:
 Então em cada passo devemos sempre fazer o cálculo de fator de balanço!
 
 Inserir(x)
+
 FB;
