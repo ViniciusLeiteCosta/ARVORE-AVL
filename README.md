@@ -107,6 +107,7 @@ Logo, é necessária uma rotação à direita:
 
        9          FB: 0
      /   \
+     
    8       10     FB: 0  
 
 (9) passa a ser pai do (10)!
