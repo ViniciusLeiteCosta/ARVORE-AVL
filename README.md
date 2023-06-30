@@ -176,7 +176,65 @@ Assim:
      /  \      /  \
     8    15   49   67
 
- A árvore está balanceada!
+A árvore está balanceada!
+
+-------
+
+Rotação Dupla à Direita:
+
+Agora que vimos a esquerda, vamos ver a direita.
+
+Veja:
+
+           27
+        /      \
+      10          59
+     /   \       /  \
+    8     15    49   67
+     \    / \
+      9  13   20
+           \
+            14
+
+(27) FB: +2
+(10) FB: -1
+(8)  FB: -1
+(9)  FB: 0
+(15) FB: +1
+(13) FB: -1
+(14) FB: 0
+(20) FB: 0
+
+(59) FB: 0
+(49) FB: 0
+(67) FB: 0
+
+Nó desbalanceado: (27)
+
+PRIMEIRA ROTAÇÃO À ESQUERDA.
+
+        
+            27                                   [27]
+           /                                  /       \
+         15               =>               [15]         59  
+        /                                 /   \         /   \
+      10                               [10]    20     49     67
+                                       /  \
+                                     8     13
+                                      \
+                                       9
+
+SEGUNDA ROTAÇÃO À DIREITA. 
+
+               15
+           /        \ 
+          10          27
+         /   \       /   \
+        8     13    20    59
+         \      \        /   \
+          9      14     49   67
+
+A árvore está balanceada!
 
 -------
 
