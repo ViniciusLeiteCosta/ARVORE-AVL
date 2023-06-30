@@ -183,8 +183,10 @@ Assim:
  DICA: 
 
  Quando +: A subárvore esquerda cresceu.
+
  Quando -: A subárvore direita cresceu.
 
  
  ++ ou -- -> Rotação Simples
+
  +- ou -+ -> Rotação Dupla
