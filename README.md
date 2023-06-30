@@ -90,7 +90,7 @@ fazemos novamente o cálculo de fator de balanço:
 
 62 FB = 0
                   
-Então em cada passo devemos sempre fazer o cálculo de fator de balanço!
+Então em cada passo sempre se faz o cálculo de fator de balanço!
 
 Inserir(x)
 
