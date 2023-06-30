@@ -124,3 +124,67 @@ Imagine a seguinte árvore:
     8    15      67
                  /
                59  
+
+Como a árvore é grande, segue os FB:
+
+(27) FB: -1
+(10) FB: 0
+(8)  FB: 0
+(15) FB: 0
+
+(49) FB: -2
+(67) FB: +1
+(59) FB: 0
+
+Perceba que o nó (49) tem FB de -2, logo é necessário fazer uma rotação..
+Mas qual a diferença da rotação simples para a rotação dupla?
+
+Quando temos sinais diferentes é necessário fazer uma rotação dupla:
+
+        49        FB: -2
+           \
+             67   FB: +1
+            /
+          59      FB: 0
+
+Alguns se referem a este tipo de estrutura como "joelho" da árvore.
+Para consertar essa inconsistência, devemos primeiro alinhar este "joelho" e depois fazer o balanceamento.
+
+A rotação dupla à esquerda nada mais é que uma rotação para a direita e depois outra para a esquerda.
+ 
+Veja:
+
+PRIMEIRA ROTAÇÃO À DIREITA
+
+        49
+          \
+            59
+              \
+                67
+
+SEGUNDA ROTAÇÃO À ESQUERDA
+
+        59
+       /   \
+     49     67
+              
+Assim:
+
+           27
+        /      \
+      10        59
+     /  \      /  \
+    8    15   49   67
+
+ A árvore está balanceada!
+
+-------
+
+ DICA: 
+
+ Quando +: A subárvore esquerda cresceu.
+ Quando -: A subárvore direita cresceu.
+
+ 
+ ++ ou -- -> Rotação Simples
+ +- ou -+ -> Rotação Dupla
