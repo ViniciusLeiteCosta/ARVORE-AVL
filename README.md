@@ -57,8 +57,11 @@ Sabendo disto, fazemos o seguinte:
  Quando não temos nenhum filho no lado esquerdo, dizemos que este filho é 0, de maneira sequencial de baixo pra cima vamos fazer:
 
  FB: 0 - 1 = -1
+ 
  FB: 0 - 2 = -2 (61)
+ 
  FB: 0 - 3 = -3
+ 
  FB: 0 - 4 = -4
 
  Apartir do 61 sabemos que a árvore desbalanceou!
@@ -82,7 +85,9 @@ pegamos 61 e fazemos a rotação, onde 61 se torna a raíz e 60 seu filho esquer
 fazemos novamente o cálculo de fator de balanço:
 
 60 FB = 0
+
 61 FB = 0
+
 62 FB = 0
                   
 Então em cada passo devemos sempre fazer o cálculo de fator de balanço!
