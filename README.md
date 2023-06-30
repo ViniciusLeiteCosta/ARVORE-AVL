@@ -30,7 +30,7 @@ Primeiros descobrimos a altura das subárvores observando seus níveis, depois f
 
 -------
 
-Agora vamos ver Rotação à Esquerda:
+Rotação à Esquerda:
 
 Vamos fazer o FB na árvore apresentada:
 
@@ -93,7 +93,7 @@ FB;
 
 -------
 
-Agora vamos ver Rotação à Direita:
+Rotação à Direita:
 
          10    FB: +2
         /
@@ -112,3 +112,15 @@ Logo, é necessária uma rotação à direita:
 (9) passa a ser pai do (10)!
 
 -------
+
+Rotação Dupla à Esquerda:
+
+Imagine a seguinte árvore:
+
+          27
+        /    \
+      10      49
+     /  \       \
+    8    15      67
+                 /
+               59  
