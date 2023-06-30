@@ -4,7 +4,7 @@ Este código é referente a árvore AVL, sua estrutura e algumas explicações i
 A altura é a quantidade de arestas(níveis) da raíz até suas folhas, 
 e o fator de balanço é a altura da subárvore esquerda - a altura da subárvore direita.
 
-Desta forma uma rotação à esquerda: 
+-------
 
 Imagine esta árvore 
 
