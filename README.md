@@ -4,7 +4,7 @@ Este código é referente a árvore AVL, sua estrutura e algumas explicações i
 A altura é a quantidade de arestas(níveis) da raíz até suas folhas, 
 e o fator de balanço é a altura da subárvore esquerda - a altura da subárvore direita.
 
-Desta forma: 
+Desta forma uma rotação à esquerda: 
 
 Imagine esta árvore 
 
@@ -16,7 +16,7 @@ Imagine esta árvore
                 \
                   63 (nível/altura 1)
 
-Esta árvore está totalmente desbalanceada.
+Esta árvore está totalmente desbalanceada para a direita, logo é necessária uma rotação à esquerda.
 Uma árvore é dita balanceada quando ela respeita a seguinte regra:
 
 Quando o fator de balanço é:
@@ -27,6 +27,10 @@ Para descobrir o fator de balanço nós nos atentamos a seguinte fórmula.
 FB = alturadaSubárvoreESQ - alturadaSubárvoreDIR.
 
 Primeiros descobrimos a altura das subárvores observando seus níveis, depois fazemos o cálculo de fator de balanço!
+
+-------
+
+Agora vamos ver Rotação à Esquerda:
 
 Vamos fazer o FB na árvore apresentada:
 
@@ -86,3 +90,25 @@ Então em cada passo devemos sempre fazer o cálculo de fator de balanço!
 Inserir(x)
 
 FB;
+
+-------
+
+Agora vamos ver Rotação à Direita:
+
+         10    FB: +2
+        /
+      9        FB: 1
+     /
+    8          FB: 0
+
+Analisando, vemos que o nó (10) está desbalanceado!
+
+Logo, é necessária uma rotação à direita:
+
+    9          FB: 0
+  /   \
+8       10     FB: 0  
+
+(9) passa a ser pai do (10)!
+
+-------
