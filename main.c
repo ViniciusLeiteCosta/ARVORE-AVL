@@ -55,10 +55,5 @@ int main() {
         }
 
     }
-
-    if(chave == 000){
-        printf("\n\n\nFIM DO PROGRAMA!");
-    }
-
     return 0;
 }
