@@ -12,4 +12,4 @@ No* inserir_avl(No* no, int chave);
 No* remover_avl(No* no, int chave);
 void imprimirPreOrder(No* no);
 
-#endif // AVL_H_INCLUDED
+#endif 
