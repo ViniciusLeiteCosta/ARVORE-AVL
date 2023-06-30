@@ -128,12 +128,17 @@ Imagine a seguinte árvore:
 Como a árvore é grande, segue os FB:
 
 (27) FB: -1
+
 (10) FB: 0
+
 (8)  FB: 0
+
 (15) FB: 0
 
 (49) FB: -2
+
 (67) FB: +1
+
 (59) FB: 0
 
 Perceba que o nó (49) tem FB de -2, logo é necessário fazer uma rotação..
@@ -197,16 +202,26 @@ Veja:
             14
 
 (27) FB: +2
+
 (10) FB: -1
+
 (8)  FB: -1
+
 (9)  FB: 0
+
 (15) FB: +1
+
 (13) FB: -1
+
 (14) FB: 0
+
 (20) FB: 0
 
+
 (59) FB: 0
+
 (49) FB: 0
+
 (67) FB: 0
 
 Nó desbalanceado: (27)
