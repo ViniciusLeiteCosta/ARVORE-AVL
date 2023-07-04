@@ -8,8 +8,16 @@ typedef struct No {
     int altura;
 } No;
 
-No* inserir_avl(No* no, int chave);
-No* remover_avl(No* no, int chave);
-void imprimirPreOrder(No* no);
+No* criarNo(int chave);
+int altura(No* no);
+int calcularFatorBalanceamento(No* no);
+int calcularMaior(int a, int b);
+No* encontrarMinimo(No* no);
+No* rotacaoDireita(No* no);
+No* rotacaoEsquerda(No* no);
+No* inserir_avl(No* raiz, int chave);
+No* remover_avl(No* raiz, int chave);
+void preorder_avl_arquivo(No* no, FILE* arquivo);
 
 #endif 
+

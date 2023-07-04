@@ -1,59 +1,68 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "avl.h"
 
 int main() {
-
+    
     No* raiz = NULL;
-    int chave,opcao;
+    int opcao, chave;
+    FILE* entrada = fopen("entrada.in", "r");
+    FILE* saida = fopen("saida.out", "w");
 
-    //TESTE COM 10 CHAVES PREDEFINIDAS.
-    raiz = inserir_avl(raiz, 10);
-    raiz = inserir_avl(raiz, 3);
-    raiz = inserir_avl(raiz, 5);
-    raiz = inserir_avl(raiz, 9);
-    raiz = inserir_avl(raiz, 45);
-    raiz = inserir_avl(raiz, 70);
-    raiz = inserir_avl(raiz, 50);
-    raiz = inserir_avl(raiz, 20);
-    raiz = inserir_avl(raiz, 15);
-    raiz = inserir_avl(raiz, 8);
+    if (entrada == NULL) {
+        printf("ERRO - ENTRADA.\n");
+        return 1;
+    }
 
-    printf("DADOS: [ ");
-    preorder_avl(raiz);
-    printf("]");
+    if (saida == NULL) {
+        printf("ERRO - SAIDA.\n");
+        return 1;
+    }
 
-    while(1){
+    // ler as chaves de entrada.in
+    while (fscanf(entrada, "%d", &chave) == 1) {
+        raiz = inserir_avl(raiz, chave);
+    }
 
-        printf("\nINSERIR (1) | REMOVER (2) | SAIR (-1): ");
+    fclose(entrada);
+
+    do {
+        printf("\nEscolha uma opcao: (1) INSERIR | (2) PREORDER | (3) REMOVER | (99) SAIR:");
         scanf("%d", &opcao);
 
-        switch(opcao){
+        switch (opcao) {
             case 1:
-                printf("\nDIGITE O NUMERO A SER INSERIDO: ");
+                printf("\nINSERIR: ");
                 scanf("%d", &chave);
                 raiz = inserir_avl(raiz, chave);
-
-                printf("\nARVORE: [ ");
-                preorder_avl(raiz);
-                printf("]");
-                break;
                 break;
             case 2:
-                printf("\nDIGITE O NUMERO A SER REMOVIDO: ");
+                printf("\nPREORDER: ");
+                preorder_avl(raiz);
+                printf("\n");
+                break;
+            case 3:
+                printf("\nREMOVER: ");
                 scanf("%d", &chave);
                 raiz = remover_avl(raiz, chave);
-
-                printf("\nARVORE: [ ");
-                preorder_avl(raiz);
-                printf("]");
                 break;
-            case -1:
-                exit(1);
+            case 99:
+            	 printf("\nPREORDER: ");
+            	 preorder_avl(raiz);
+                printf("\nFIM.\n");
                 break;
             default:
-                printf("ERRO!");
+                printf("\nERRO!\n");
+                break;
         }
+    } while (opcao != 99);
 
-    }
+    // printar a saida no arquivo
+    fprintf(saida, "PREORDER: ");
+    preorder_avl_arquivo(raiz, saida);
+
+    fclose(saida);
+
     return 0;
 }
+
