@@ -1,6 +1,13 @@
 # arvore-avl
 Este código é referente a árvore AVL, sua estrutura e algumas explicações importantes!
 
+Atividade:
+![image](https://github.com/ViniciusLeiteCosta/ARVORE-AVL/assets/92338016/3d072533-8fa7-4022-9425-fcda7b2b3810)
+
+Mais sobre essa estrutura:
+
+Quando falamos de AVL, devemos agora ter em mente dois conceitos: Altura e Fator de balanço.
+
 A altura é a quantidade de arestas(níveis) da raíz até suas folhas, 
 e o fator de balanço é a altura da subárvore esquerda - a altura da subárvore direita.
 
